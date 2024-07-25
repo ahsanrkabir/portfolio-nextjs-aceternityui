@@ -24,7 +24,7 @@ const RecentProjects = () => {
                 <div className="relative w-full h-full lg:rounded-3xl overflow-hidden bg-[#13162D]">
                   <img src="bg.png" alt="bg-img" />
                 </div>
-                <img src={img} alt={title} />
+                <img src={img} alt={title} className="z-10 absolute bottom-0" />
               </div>
 
               {/* project title and description */}

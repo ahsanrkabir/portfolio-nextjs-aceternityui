@@ -9,7 +9,7 @@ const Clients = () => {
         Kind words from <span className="text-purple">Satisfied Clients</span>
       </h1>
 
-      <div className="flex flex-col items-center lg:mt-10">
+      <div className="flex flex-col items-center lg:mt-20">
         {/* testimonials */}
         <InfiniteMovingCards
           items={testimonials}
@@ -18,7 +18,7 @@ const Clients = () => {
         />
 
         {/* company logos */}
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 mt-10">
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 mt-20">
           {companies.map(({ id, img, name, nameImg }) => (
             <div key={id} className="flex gap-2 max-w-32 md:max-w-60">
               <img src={img} alt={name} className="md:w-10 w-5" />
