@@ -13,7 +13,7 @@ const RecentProjects = () => {
 
       {/* projects container */}
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
-        {projects.map(({ id, title, des, img, iconLists, link }) => (
+        {projects.map(({ id, title, des, img, iconLists, link, live }) => (
           <div
             key={id}
             className="lg:min-h-[32.5rem] sm:h-[41rem] h-[32rem] flex justify-center items-center sm:w-[570px] w-[80vw]"
@@ -50,9 +50,13 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-lg md:text-sm text-xs text-purple">
+                  <a
+                    href={live}
+                    target="_blank"
+                    className="flex lg:text-lg md:text-sm text-xs text-purple"
+                  >
                     Check Live Site
-                  </p>
+                  </a>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>
